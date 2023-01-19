@@ -18,7 +18,7 @@ function submitbook(e) {
 
 
     return(
-             <div class="formbold-main-wrapper">
+            <div class="formbold-main-wrapper">
   <div class="formbold-form-wrapper">
     <form action="https://formbold.com/s/FORM_ID" method="POST">
       <div class="flex flex-wrap formbold--mx-3">

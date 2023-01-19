@@ -4,6 +4,6 @@ const bookSchema=new mongoose.Schema({
         name:String
 });
 
-const books=mongoose.model('Categories',bookSchema);
+const books=mongoose.model('books',bookSchema);
 
 module.exports=books;

@@ -1,4 +1,4 @@
-const books = require("../models/Books")
+const books=require("../models/books")
 const bookService=require("../services/bookServices")
 
 const createBook=async (req,res)=>{

@@ -1,4 +1,4 @@
-const Book=require("../models/Books");
+const Book=require("../models/books");
 
 const addBook=async(b)=>{
     return await Book.create(b)
