@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react"
 import { Link } from "react-router-dom";
-import booksService from "../services/booksService";
+import booksService from "../services/bookService";
 import tablescss from "../assets/table.css";
 
 function BooksListe() {
