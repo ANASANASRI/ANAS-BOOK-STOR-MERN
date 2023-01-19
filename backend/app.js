@@ -4,8 +4,7 @@ const app=express();
 const cors=require("cors"); 
 
 const loggingMiddelwares=require("./middlewares/loggingMiddelwares")
-const prodRoute=require("./routes/productRoutes")
-const catRoute=require("./routes/categoryRoutes")
+const bookRoute=require("./routes/bookRoutes")
 const userRoute=require("./routes/userRoutes")
 
 app.use(express.json());
@@ -16,16 +15,14 @@ app.use(loggingMiddelwares.loggingUrls) ;
 app.use(cors());
 
 require('dotenv').config()
-/* console.log(process.env.dbURL)*/
 
-const books = require("./models/products.js");
+const books = require("./models/books.js");
 
 mongoose.connect(process.env.dbURL)
         .then(result=>console.log('connect'))
         .catch(err => console.log(err));
 
-app.use("/products",prodRoute)
-app.use("/categories",catRoute)
+app.use("/books",bookRoute)
 app.use("/users",userRoute)
 
 
