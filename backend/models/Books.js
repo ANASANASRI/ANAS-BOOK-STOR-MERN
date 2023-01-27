@@ -6,8 +6,8 @@ const bookSchema=new mongoose.Schema({
         isbn:String,
         acteur:String,
         editeur:String,
-        date_edition:date,
-        name:String
+        date_edition:Date,
+        image:String
 });
 
 const books=mongoose.model('books',bookSchema);

@@ -1,6 +1,5 @@
 import http from "./http-common";
 
-
 async function getAllBook(){
     return await http.get(`/books`);
 }

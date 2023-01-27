@@ -10,7 +10,7 @@ function BooksListe() {
     const getAllBooks =async () =>{
 
         try {
-            const result =await booksService.getAllBooks()
+            const result =await booksService.getAllBook()
             setBooks(result.data)
         } catch (error) {
             console.log(error);
@@ -22,76 +22,15 @@ function BooksListe() {
         getAllBooks()
     },[]);
 
-
-async function DelBooks(id) {
-    await booksService.deleteBooksById(id);
-    getAllBooks()
-}
-
     return(
 <div class="container">
 	<table>
 		<thead>
 			<tr>
-				<th>ID</th>
-				<th>TITLE</th>
-				<th>writer</th>
-				<th>Published</th>
-				<th>Action</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Cell 1</td>
-				<td>Cell 2</td>
-				<td>Cell 3</td>
-				<td>Cell 4</td>
-				<td>Cell 5</td>
-			</tr>
-			<tr>
-				<td>Cell 1</td>
-				<td>Cell 2</td>
-				<td>Cell 3</td>
-				<td>Cell 4</td>
-				<td>Cell 5</td>
-			</tr>
-			<tr>
-				<td>Cell 1</td>
-				<td>Cell 2</td>
-				<td>Cell 3</td>
-				<td>Cell 4</td>
-				<td>Cell 5</td>
-			</tr>
-			<tr>
-				<td>Cell 1</td>
-				<td>Cell 2</td>
-				<td>Cell 3</td>
-				<td>Cell 4</td>
-				<td>Cell 5</td>
-			</tr>
-			<tr>
-				<td>Cell 1</td>
-				<td>Cell 2</td>
-				<td>Cell 3</td>
-				<td>Cell 4</td>
-				<td>Cell 5</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-    )}
-
-export default BooksListe;
-
-
-
-
-{/* <thead>
-			<tr>
-				<th>ID</th>
-				<th>TITLE</th>
-				<th>writer</th>
-				<th>Published</th>
+				<th>Id</th>
+				<th>Nom</th>
+				<th>Auteur</th>
+				<th>Date Edition</th>
 				<th>Action</th>
 			</tr>
 		</thead>
@@ -100,14 +39,16 @@ export default BooksListe;
             {books.map((elem,i)=>{
                     return <tr key={i} >
                         <td>{i}</td>
-                        <td>{elem.fname}</td>
-                        <td>{elem.lname}</td>
-                        <td>{elem.email}</td>
-                        <td>
-                            <button onClick={()=>DelBooks(elem._id)}>Supp</button>
-                            <Link to={`/books/${elem._id}`} >Edit</Link>
-                            </td>
+                        <td>{elem.nom}</td>
+                        <td>{elem.acteur}</td>
+                        <td>{elem.date_edition}</td>
+                        <td><Link to={`/books/${elem._id}`} >More Détail</Link></td>
                     </tr>
                 })}
 
-		</tbody> */}
+		</tbody>
+	</table>
+</div>
+    )}
+
+export default BooksListe;

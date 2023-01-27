@@ -4,6 +4,7 @@ import Home from './Components/Home';
 import Header from './Components/Header';
 import BooksListe from './Components/BooksListe';
 import AddBookForm from './Components/AddBookForm';
+import DetailBook from './Components/DetailBook';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/books' element={<BooksListe/>}/>
       <Route path='/add' element={<AddBookForm/>}/>
+      <Route path='/books/:id' element={<DetailBook/>}/>
     </Routes>
     </>
   );
