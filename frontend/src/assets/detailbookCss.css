@@ -27,11 +27,11 @@
   --dark: hsl(var(--hue), 25%, 10%);
   --grey: #2d2d2d;
 
-  width: 310px;
-  height: 500px;
+  width: 400px;
+  height: 600px;
 
  
-  perspective: 1000px;
+  perspective: 800px;
 }
 
 /* .flip-card */
@@ -166,7 +166,7 @@ figcaption {
 .ull {
   padding-top: 50%;
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
   height: 100%;
 
   list-style: none;
@@ -341,13 +341,4 @@ button:active+.design-container,
 button:focus+.design-container {
   --tr: 20;
   --op: .7;
-}
-
-.abs-site-link {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  color: hsla(0, 0%, 100%, .6);
-  font-size: 16px;
-  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
 }

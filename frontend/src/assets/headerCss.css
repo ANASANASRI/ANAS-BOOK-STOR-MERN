@@ -7,6 +7,17 @@ ul {
     overflow: hidden;
 }
 
+.logo{
+        width: 60px; 
+        height: 30px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-indent: -9999px;
+        padding-right: 10px;;
+        margin: 6px 0 5px 0;
+}
+
 li {
     float: left;
 }
@@ -26,3 +37,4 @@ li a:hover {
     background-color:#2D2D2B;
     color: #C29C71;
 }
+
