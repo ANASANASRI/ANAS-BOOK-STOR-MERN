@@ -1,11 +1,11 @@
 const mongoose=require("mongoose") 
 
 const respoSchema=new mongoose.Schema({
-        nom:String,
-        prenom:String,
-        email:String,
-        password:String,
-        photo:String
+        nom:{String,require:true},
+        prenom:{String,require:true},
+        email:{String,require:true},
+        password:{String,require:true},
+        photo:{String,require:false}
 });
 
 const respo=mongoose.model('respo',respoSchema);

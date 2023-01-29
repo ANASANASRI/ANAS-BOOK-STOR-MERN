@@ -6,6 +6,7 @@ const cors=require("cors");
 const loggingMiddelwares=require("./middlewares/loggingMiddelwares")
 const bookRoute=require("./routes/bookRoutes")
 //const userRoute=require("./routes/userRoutes")
+const catRoute=require("./routes/categoryRoutes")
 
 app.use(express.json());
 
@@ -23,6 +24,7 @@ mongoose.connect(process.env.dbURL)
         .catch(err => console.log(err));
 
 app.use("/books",bookRoute)
+app.use("/categories",catRoute)
 //app.use("/users",userRoute)
 
 

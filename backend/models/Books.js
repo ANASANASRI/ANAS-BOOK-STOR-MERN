@@ -7,7 +7,11 @@ const bookSchema=new mongoose.Schema({
         acteur:String,
         editeur:String,
         date_edition:Date,
-        image:String
+        image:String,
+        category:{
+                type:mongoose.Types.ObjectId,
+                ref:"categories"
+        }
 });
 
 const books=mongoose.model('books',bookSchema);
