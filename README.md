@@ -5,7 +5,7 @@
 Anas Book 
 </h1>
 <p align="center">
- <img src="https://github.com/ANASANASRI/ANAS-BOOK-MERN/blob/master/frontend/public/logo192.png" />
+ <img src="https://github.com/ANASANASRI/ANAS-BOOK-MERN/blob/master/frontend/public/favicon.png" />
 </p>
 <p align="center">
 MongoDB, Expressjs, React/Redux, Nodejs
