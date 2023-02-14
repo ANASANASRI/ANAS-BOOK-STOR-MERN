@@ -18,7 +18,7 @@ MERN stack is the idea of using Javascript/Node for fullstack web development.
 
 ## clone or download
 ```terminal
-$ git clone https://github.com/ANASANASRI/Casa_Delivery_MERN
+$ git clone https://github.com/ANASANASRI/ANAS-BOOK-MERN
 $ yarn # or npm i
 ```
 
@@ -32,6 +32,6 @@ User can sign in or sign up
 
 ## BUGs or comments
 
-[Create new Issues](https://github.com/ANASANASRI/Casa_Delivery_MERN/issues) (preferred)
+[Create new Issues](https://github.com/ANASANASRI/ANAS-BOOK-MERN/issues) (preferred)
 
 Email Me: anasanasri3030@gmail.com (welcome, say hi)
