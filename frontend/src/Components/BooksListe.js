@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react"
+
 import { Link } from "react-router-dom";
 import booksService from "../services/bookService";
 import categoryService from "../services/categoryService";
@@ -8,6 +9,9 @@ function BooksListe() {
 
     const [books, setBooks] = useState([]);
     const [categories, setCategories] = useState([]);
+    const [filteredBooks, setFilteredBooks] = useState([]);
+    const [selectedCategory, setSelectedCategory] = useState("");
+    const [searchKeyword, setSearchKeyword] = useState("");
 
 const getAllBooks = async () => {
     try {
@@ -32,8 +36,39 @@ useEffect(() => {
     getAllBooks();
 }, []);
 
+useEffect(() => {
+    // Filter books based on selected category and search keyword
+    let filtered = books;
+    if (selectedCategory !== "") {
+        filtered = filtered.filter(book => book.category === selectedCategory);
+    }
+    if (searchKeyword !== "") {
+        filtered = filtered.filter(book => book.nom.toLowerCase().includes(searchKeyword.toLowerCase()));
+    }
+    setFilteredBooks(filtered);
+}, [books, selectedCategory, searchKeyword]);
+
+const handleCategoryChange = (event) => {
+    setSelectedCategory(event.target.value);
+}
+
+const handleSearchInputChange = (event) => {
+    setSearchKeyword(event.target.value);
+}
+
 return (
     <div class="container">
+        <div>
+            <label htmlFor="category">Category:</label>
+            <select id="category" value={selectedCategory} onChange={handleCategoryChange}>
+                <option value="">All</option>
+                {categories.map(category => (
+                    <option key={category._id} value={category._id}>{category.name}</option>
+                ))}
+            </select>
+            <label htmlFor="search">Search:</label>
+            <input type="text" id="search" value={searchKeyword} onChange={handleSearchInputChange} />
+        </div>
         <table>
             <thead>
                 <tr>
@@ -45,7 +80,7 @@ return (
                 </tr>
             </thead>
             <tbody>
-                {books.map((elem, i) => {
+                {filteredBooks.map((elem, i) => {
                     const category = categories.find(category => category._id === elem.category);
                     return (
                         <tr key={elem._id}>
