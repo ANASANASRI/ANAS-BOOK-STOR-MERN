@@ -60,7 +60,7 @@ return (
             type="text"
             name="nom"
             id="nom"
-            placeholder="Enter le titre"
+            placeholder="modifier le titre"
             value={nom}
             onChange={(e) => setNom(e.target.value)}
             className="formbold-form-input"
@@ -74,7 +74,7 @@ return (
         <textarea
             name="description"
             id="description"
-            placeholder="Enter la description"
+            placeholder="modifier la description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             className="formbold-form-input"
@@ -89,7 +89,7 @@ return (
             type="text"
             name="isbn"
             id="isbn"
-            placeholder="Enter ISBN"
+            placeholder="modifier ISBN"
             value={isbn}
             onChange={(e) => setIsbn(e.target.value)}
             className="formbold-form-input"
@@ -104,7 +104,7 @@ return (
             type="text"
             name="acteur"
             id="acteur"
-            placeholder="Enter acteur nom"
+            placeholder="modifier acteur nom"
             value={acteur}
             onChange={(e) => setActeur(e.target.value)}
             className="formbold-form-input"
@@ -119,7 +119,7 @@ return (
             type="text"
             name="editeur"
             id="editeur"
-            placeholder="Enter editeur nom"
+            placeholder="modifier editeur nom"
             value={editeur}
             onChange={(e) => setEditeur(e.target.value)}
             className="formbold-form-input"
@@ -154,7 +154,7 @@ return (
                 value={category}
                 onChange={handleCategoryChange}
             >
-                <option value="">Select a category</option>
+                <option value="">selectioner category</option>
                 {categories.map(category => (
                 <option key={category._id} value={category._id}>{category.name}</option>
             ))}
@@ -163,7 +163,7 @@ return (
         </div>          
         
     <div>
-    <button class="formbold-btn">Submit</button>
+    <button class="formbold-btn">Edite</button>
     </div>
 
 </form>

@@ -164,7 +164,7 @@ function AddBookForm() {
             </div>          
           
       <div>
-        <button class="formbold-btn">Submit</button>
+        <button class="formbold-btn">Add</button>
       </div>
 
     </form>
