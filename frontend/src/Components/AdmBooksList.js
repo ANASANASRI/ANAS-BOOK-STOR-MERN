@@ -56,6 +56,11 @@ const handleSearchInputChange = (event) => {
     setSearchKeyword(event.target.value);
 }
 
+async function DelBook(id) {
+    await booksService.deleteBookById(id);
+    getAllBooks()
+}
+
 return (
     <div class="container">
         <div>
@@ -89,7 +94,8 @@ return (
                             <td>{elem.acteur}</td>
                             <td>{category ? category.name : 'unknown'}</td>
                             <td>
-                                <Link to={`/books/${elem._id}`}>More Détail</Link>
+                                <button onClick={()=>DelBook(elem._id)}>Supp</button>
+                                <Link to={`/Books/edit/${elem._id}`} >Edit</Link>
                             </td>
                         </tr>
                     )

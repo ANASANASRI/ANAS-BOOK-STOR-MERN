@@ -1,6 +1,6 @@
 import { useState } from "react" 
 import { Link } from "react-router-dom"
-import Logincss from "../assets/loginCss.css"
+import "../assets/loginCss.css"
 
 function Login() {
     return(
