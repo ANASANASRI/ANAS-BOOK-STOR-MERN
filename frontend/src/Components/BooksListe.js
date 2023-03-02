@@ -1,5 +1,4 @@
 import { useState,useEffect } from "react"
-
 import { Link } from "react-router-dom";
 import booksService from "../services/bookService";
 import categoryService from "../services/categoryService";
@@ -37,7 +36,6 @@ useEffect(() => {
 }, []);
 
 useEffect(() => {
-    // Filter books based on selected category and search keyword
     let filtered = books;
     if (selectedCategory !== "") {
         filtered = filtered.filter(book => book.category === selectedCategory);

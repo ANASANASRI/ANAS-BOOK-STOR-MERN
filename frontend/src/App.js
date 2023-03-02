@@ -21,8 +21,7 @@ function App() {
 
       <Route path='/addBook' element={<AddBookForm/>}/>
       <Route path='/books/edit/:id' element={<EditeBook/>}/>
-      <Route path='/adm' element={<AdmBooksList/>}/>
-
+      <Route path='/adm' element={<AdmBooksList/>}/>s
     </Routes>
     </>
   );
