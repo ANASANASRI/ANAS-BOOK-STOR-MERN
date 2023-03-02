@@ -5,7 +5,7 @@
 Anas Book 
 </h1>
 <p align="center">
- <img width="100" height="100" src="https://github.com/ANASANASRI/ANAS-BOOK-MERN/blob/master/frontend/public/logo192.png" />
+ <img width="100" height="100" src="https://github.com/ANASANASRI/ANAS-BOOK-STOR-MERN/blob/master/frontend/public/logo192.png" />
 </p>
 <p align="center">
 MongoDB, Expressjs, React/Redux, Nodejs
@@ -18,20 +18,23 @@ MERN stack is the idea of using Javascript/Node for fullstack web development.
 
 ## clone or download
 ```terminal
-$ git clone https://github.com/ANASANASRI/ANAS-BOOK-MERN
+$ git clone https://github.com/ANASANASRI/ANAS-BOOK-STOR-MERN
 $ yarn # or npm i
 ```
 
 # Screenshots of this project
 
-User visit public and Home page
-![User visit public and Home page](https://github.com/ANASANASRI/Casa_Delivery_MERN/blob/master/screenshot-casa-delivery/Image1.png)
+Home page
+![Home page](https://github.com/ANASANASRI/ANAS-BOOK-STOR-MERN/blob/master/Screencapture/screencapture-localhost-3000-2023-03-01-12_22_37.png)
 
-User can sign in or sign up
-![User can sign in or sign up](https://github.com/ANASANASRI/Casa_Delivery_MERN/blob/master/screenshot-casa-delivery/Frame8.png)
+Book Liste
+![Book Liste](https://github.com/ANASANASRI/ANAS-BOOK-STOR-MERN/blob/master/Screencapture/screencapture-localhost-3000-books-2023-03-01-12_23_53.png)
+
+Book Details
+![Book Details](https://github.com/ANASANASRI/ANAS-BOOK-STOR-MERN/blob/master/Screencapture/screencapture-localhost-3000-books-63d3e3293f30b436e967d127-2023-03-01-12_24_30.png
 
 ## BUGs or comments
 
-[Create new Issues](https://github.com/ANASANASRI/ANAS-BOOK-MERN/issues) (preferred)
+[Create new Issues](https://github.com/ANASANASRI/ANAS-BOOK-STOR-MERN/issues) (preferred)
 
 Email Me: anasanasri3030@gmail.com (welcome, say hi)
