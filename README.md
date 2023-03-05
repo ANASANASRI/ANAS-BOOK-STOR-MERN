@@ -7,6 +7,9 @@ Anas Book
 <p align="center">
  <img width="100" height="100" src="https://github.com/ANASANASRI/ANAS-BOOK-STOR-MERN/blob/master/frontend/public/logo192.png" />
 </p>
+
+![](https://github.com/ANASANASRI/ANAS-BOOK-STOR-MERN/blob/master/Book.jpg)
+
 <p align="center">
 MongoDB, Expressjs, React/Redux, Nodejs
 </p>
