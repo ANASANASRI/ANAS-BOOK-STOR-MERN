@@ -35,8 +35,24 @@ useEffect(() => {
     getAllBooks();
 }, []);
 
+useEffect(() => {
+    let filtered = books;
+    if (selectedCategory !== "") {
+        filtered = filtered.filter(book => book.category === selectedCategory);
+    }
+    if (searchKeyword !== "") {
+        filtered = filtered.filter(book => book.nom.toLowerCase().includes(searchKeyword.toLowerCase()));
+    }
+    setFilteredBooks(filtered);
+}, [books, selectedCategory, searchKeyword]);
 
+const handleCategoryChange = (event) => {
+    setSelectedCategory(event.target.value);
+}
 
+const handleSearchInputChange = (event) => {
+    setSearchKeyword(event.target.value);
+}
 
 return (
     <div class="container">
